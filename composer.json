@@ -1,0 +1,21 @@
+{
+  "name": "sodecl/coordinates",
+  "description": "Transform coordinates between utm and lat-lng",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cristian Fuentes",
+      "email": "cfuentess2010@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "sodecl\\Coordinates\\": "src/"
+    },
+    "files": ["src/utils.php"]
+  },
+  "minimum-stability": "stable",
+  "require": {},
+  "version": "0.1"
+}
