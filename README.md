@@ -8,7 +8,7 @@ composer require sodecl/coordinates
 
 ```
 
-###Usage: 
+### Usage: 
 
 ```php
 <?php  
