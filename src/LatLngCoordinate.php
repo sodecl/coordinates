@@ -21,7 +21,7 @@ class LatLngCoordinate
     {
         $transformed = Transform::latLangToUtm($this->latitude, $this->longitude);
 
-        return new UtmCoordinate($transformed->attr->x, $transformed->attr->x);
+        return new UtmCoordinate($transformed->attr->x, $transformed->attr->y);
     }
 
     public function __toString()
