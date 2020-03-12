@@ -3,6 +3,7 @@
 
 use sodecl\Coordinates\LatLngCoordinate;
 use sodecl\Coordinates\UtmCoordinate;
+use sodecl\Coordinates\Validator;
 
 class LatLngCoordinateTest extends \PHPUnit\Framework\TestCase
 {
@@ -20,5 +21,16 @@ class LatLngCoordinateTest extends \PHPUnit\Framework\TestCase
 
         $this->assertEquals($inversed->latitude, $lat);
         $this->assertEquals($inversed->longitude, $long);
+    }
+
+    public function testValidator(){
+        $lat = -38.7290686;
+        $long = -72.672761;
+        $latlng = new LatLngCoordinate($lat, $long);
+        $inversed = $latlng->toUtm();
+
+
+        $this->assertTrue(Validator::isLatLng($lat,$long));
+        $this->assertFalse(Validator::isLatLng($inversed->x,$inversed->y));
     }
 }
