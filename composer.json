@@ -3,6 +3,9 @@
   "description": "Transform coordinates between utm and lat-lng",
   "type": "library",
   "license": "MIT",
+  "commands":{
+    "test": "vendor/bin/phpunit"
+  },
   "authors": [
     {
       "name": "Cristian Fuentes",
