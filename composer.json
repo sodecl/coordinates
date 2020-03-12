@@ -3,8 +3,8 @@
   "description": "Transform coordinates between utm and lat-lng",
   "type": "library",
   "license": "MIT",
-  "commands":{
-    "test": "vendor/bin/phpunit"
+  "scripts":{
+    "test": "vendor/bin/phpunit tests"
   },
   "authors": [
     {
