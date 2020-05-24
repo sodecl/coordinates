@@ -1,3 +1,4 @@
+![PHP Composer](https://github.com/sodecl/coordinates/workflows/PHP%20Composer/badge.svg?branch=master)
 # coordinates
 // Convert UTM to LatLong and vice versa.  
 
