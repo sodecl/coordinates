@@ -8,13 +8,16 @@ class UtmCoordinate
 {
     public $x;
     public $y;
+    public $zone;
+    public $aboveEquator;
 
 
-    public function __construct($x, $y)
+    public function __construct($x, $y, $zone=18, $aboveEquator=false)
     {
         $this->x = $x;
         $this->y = $y;
-
+        $this->zone = $zone;
+        $this->aboveEquator = $aboveEquator;
     }
 
     public function toLatLng($zone=18,$aboveEquator=false){
